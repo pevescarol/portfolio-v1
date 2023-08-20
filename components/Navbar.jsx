@@ -9,7 +9,7 @@ const Navbar = () => {
 
   return (
     <>
-      <nav className='w-full bg-body fixed top-0 left-0 right-0 z-10 '>
+      <nav className='w-full bg-body fixed top-0 left-0 right-0 z-10 before:content-[""] before:absolute before:top-0 before:left-0 before:w-full before:h-[4px] before:bg-gradient-to-r from-[#e39600] via-[#8f48eb] to-[#1da1f2] before:z-10'>
         <MobileNav open={navbar} setOpen={setNavbar} />
         <div className='w-11/12 flex justify-end items-center '>
           {/* logo */}
