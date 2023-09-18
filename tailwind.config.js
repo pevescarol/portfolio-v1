@@ -8,7 +8,6 @@ module.exports = {
   theme: {
     fontFamily: {
       primary: 'Space Mono',
-      secondary: '',
     },
     screens: {
       sm: '640px',
@@ -18,11 +17,12 @@ module.exports = {
     },
     extend: {
       colors: {
-        body: '#151515',
+        body: '#06030D',
         heading: '#fff',
         subtext: '#f5f5fa',
         text: '#949495',
-      }
+        secondary: '#8079fd',
+      },
     }
   },
   plugins: [],

@@ -10,9 +10,13 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 @layer base {
   body {
-    @apply bg-body text-text;
+    @apply bg-body text-subtext;
   
   }
 }
