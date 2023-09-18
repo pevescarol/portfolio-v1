@@ -3,20 +3,20 @@ import Link from "next/link"
 const MobileNav = ({open, setOpen}) => {
   return (
     <div 
-      className={`absolute top-0 left-0 w-screen h-screen bg-body transform ${open ? '-translate-y-0' : '-translate-y-full'} transition-transform duration-300 ease-in-out `}
+      className={`absolute top-0 left-0 bottom-0 right-0 w-full h-screen text-center flex items-center justify-center bg-body transform ${open ? '-translate-y-0' : '-translate-y-full'} transition-transform duration-300 ease-in-out `}
     >
-      <ul className="flex flex-col justify-center items-center mt-28">
-        <li className="my-4">
-          <Link href='/'  onClick={() => setOpen(!open)}>_home</Link>
+      <ul>
+        <li className="p-4 font-bold text-2xl md:text-4xl text-subtext hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-r from-[#a8c0ff] via-[#8f5cff] to-[#7303c0] hover:duration-300  ">
+          <Link href='/'  onClick={() => setOpen(!open)}>Home</Link>
         </li>
-        <li className="my-4">
-          <Link href='/about'  onClick={() => setOpen(!open)}>_about-me</Link>
+        <li className="p-4 font-bold text-2xl md:text-4xl text-subtext hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-r from-[#a8c0ff] via-[#8f5cff] to-[#7303c0] hover:duration-300">
+          <Link href='/about'  onClick={() => setOpen(!open)}>About-me</Link>
         </li>
-        <li className="my-4">
-          <Link href='/projects' onClick={() => setOpen(!open)}>_projects</Link>
+        <li className="p-4 font-bold text-2xl md:text-4xl text-subtext hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-r from-[#a8c0ff] via-[#8f5cff] to-[#7303c0] hover:duration-300">
+          <Link href='/projects' onClick={() => setOpen(!open)}>Projects</Link>
         </li>
-        <li className="my-4">
-          <Link href='/contact' onClick={() => setOpen(!open)}>_contact-me</Link>
+        <li className="p-4 font-bold text-2xl md:text-4xl text-subtext hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-r from-[#a8c0ff] via-[#8f5cff] to-[#7303c0] hover:duration-300 ">
+          <Link href='/contact' onClick={() => setOpen(!open)}>Contact-me</Link>
         </li>
       </ul>
     </div>
