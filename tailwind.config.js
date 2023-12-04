@@ -6,9 +6,6 @@ module.exports = {
     './app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
   theme: {
-    fontFamily: {
-      primary: 'Space Mono',
-    },
     screens: {
       sm: '640px',
       md: '768px',
@@ -22,6 +19,9 @@ module.exports = {
         subtext: '#f5f5fa',
         text: '#949495',
         secondary: '#8079fd',
+      },
+      backgroundImage: {
+        'hero-b': "url('/assets/h-bg.png')",
       },
     }
   },
