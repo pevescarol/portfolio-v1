@@ -1,16 +1,16 @@
-import Projects from "../components/Projects";
+import Contact from "../components/Contact";
+import Projects from "../components/projects/Projects";
+import AboutSection from "../components/about-section/AboutSection";
 import Hero from "../components/hero/Hero";
-import Posts from "../components/posts/Posts";
-import AboutPage from "./about/page";
-
-// flex min-h-screen flex-col items-center justify-between p-24 font-primary
 
 export default function Home() {
   return (
-    <main className="overflow-hidden selection:text-blue-600 selection:bg-slate-100">
+    <main className="overflow-hidden selection:text-secondary selection:bg-slate-100">
       {/* Hero */}
       <Hero />
+      <AboutSection />
       <Projects />
+      <Contact />
     </main>
   )
 }

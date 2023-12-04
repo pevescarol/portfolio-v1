@@ -3,8 +3,6 @@ import { useEffect, useState } from 'react'
 import { HiMenuAlt3, HiX } from 'react-icons/hi'
 import MobileNav from './MobileNav'
 
-import Image from 'next/image'
-import carImg from '../public/assets/car-foto.jpg'
 
 const Navbar = () => {
   // estado inicial - false
@@ -14,7 +12,7 @@ const Navbar = () => {
   useEffect(() => {
     const changeColor = () => {
       if (window.scrollY >= 90) {
-        setColor('#07050F')
+        setColor('blur(16px)')
       } else {
         setColor('transparent')
       }
@@ -23,11 +21,11 @@ const Navbar = () => {
   }, [])
 
   return (
-    <nav style={{backgroundColor: `${color}`}} className='w-full fixed top-0 left-0 z-40 ease duration-300 before:content-[""] before:absolute before:top-0 before:left-0 before:w-full before:h-[4px] before:bg-gradient-to-r from-body via-[#8f5cff] to-[#4e2df9] before:z-10'>
+    <nav style={{backdropFilter: `${color}`}} className='w-full fixed top-0 left-0 z-40 ease duration-300 before:content-[""] before:absolute before:top-0 before:left-0 before:w-full before:h-[4px] before:bg-gradient-to-r from-body via-[#8f5cff] to-[#4e2df9] before:z-10'>
         <MobileNav open={navbar} setOpen={setNavbar} />
-        <div className='flex items-center justify-between h-20 max-w-5xl mx-auto py-4 px-6 lg:px-8'>
+        <div className='flex flex-wrap justify-between w-full p-8 pb-0 items-center max-w-6xl mx-auto'>
           {/* logo */}
-          <h1 className='font-bold text-xl md:text-2xl'>SP<span className='text-[#8c55ff]'>.</span><span className='text-secondary'>_</span></h1>
+          <h1 className='font-bold text-xl md:text-2xl'>SP<span className='text-[#8c55ff] text-[25px]'>.</span><span className='text-secondary'>_</span></h1>
           {/* menu mobile */}
           <div className='mt-2 z-10 w-6 h-5 flex items-center text-3xl cursor-pointer group '>
             <button 

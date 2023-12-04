@@ -10,13 +10,13 @@ const MobileNav = ({open, setOpen}) => {
           <Link href='/'  onClick={() => setOpen(!open)}>Home</Link>
         </li>
         <li className="p-4 font-bold text-2xl md:text-4xl text-subtext hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-r from-[#a8c0ff] via-[#8f5cff] to-[#7303c0] hover:duration-300">
-          <Link href='/about'  onClick={() => setOpen(!open)}>About-me</Link>
+          <Link href='#about'  onClick={() => setOpen(!open)}>About</Link>
         </li>
         <li className="p-4 font-bold text-2xl md:text-4xl text-subtext hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-r from-[#a8c0ff] via-[#8f5cff] to-[#7303c0] hover:duration-300">
-          <Link href='/projects' onClick={() => setOpen(!open)}>Projects</Link>
+          <Link href='#projects' onClick={() => setOpen(!open)}>Projects</Link>
         </li>
         <li className="p-4 font-bold text-2xl md:text-4xl text-subtext hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-r from-[#a8c0ff] via-[#8f5cff] to-[#7303c0] hover:duration-300 ">
-          <Link href='/contact' onClick={() => setOpen(!open)}>Contact-me</Link>
+          <Link href='#contact' onClick={() => setOpen(!open)}>Contact</Link>
         </li>
       </ul>
     </div>
