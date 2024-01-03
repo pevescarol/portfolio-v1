@@ -18,13 +18,13 @@ const Contact = () => {
         <h3 className="text-3xl md:text-5xl tracking-wide text-subtext  font-semibold">
           Get in Touch.
         </h3>
-        {/* <p className='text-text text-sm md:text-xl pt-2'>So that we can talk more about . . .</p> */}
+        <p className='text-text text-sm md:text-xl pt-2'>You can find me on:</p>
         
         <div className='flex items-center justify-center gap-4 text-2xl mt-8 opacity-70'>
           <Link href="mailto:scpeves@gmail.com" className='group'>
             <FiMail className='group-hover:scale-125 transition' />
           </Link>
-          <Link href="https://t.me/cpeves" target='_blank' className='group'>
+          <Link href="https://t.me/carpvs" target='_blank' className='group'>
             <BiLogoTelegram className='group-hover:scale-125 transition' />
           </Link>
           <Link href="https://www.linkedin.com/in/speves/" target='_blank' className='group'>
