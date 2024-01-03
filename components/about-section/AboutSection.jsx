@@ -46,7 +46,10 @@ const AboutSection = () => {
       <div>
         <div className="text-center mb-[76px]">
           <h2 className='text-2xl md:text-3xl lg:text-4xl tracking-wide font-bold text-heading'>a bit about me<span className='text-[#8c55ff] text-4xl'>.</span></h2>
-          <p className="text-subtext text-base md:text-lg mt-6 leading-8 opacity-70 ">I continuously invest in improving my efficiency through training and new challenges.
+          <p className="text-subtext text-base md:text-lg mt-6 leading-8 opacity-70 ">
+            I am currently studying a degree in Data Science and Artificial Intelligence.
+            <br className="hidden md:block" />
+            I continuously invest in improving my efficiency through training and new challenges.
             <br className="hidden md:block" /> Here are some of my skills on which I have been working:
           </p>
         </div>
